@@ -1,8 +1,16 @@
 import React from 'react'
+import Button from './Component/Button';
 
 const App = () => {
+  const dropdownData = [{
+    name:"Date of registraion " , inputType:"date"
+   },
+  {name:"vender score",inputType:"number"}
+  ];
   return (
-    <div>welcome to react</div>
+    <div>
+      <Button dropdownConent = {dropdownData} buttonLabel = 'refine by'/>
+    </div>
   )
 }
 
