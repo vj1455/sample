@@ -1,17 +1,16 @@
+
 import React from 'react'
-import Button from './Component/Button';
+import Fliterdata from "./Component/Fliterdata"
+
 
 const App = () => {
-  const dropdownData = [{
-    name:"Date of registraion " , inputType:"date"
-   },
-  {name:"vender score",inputType:"number"}
-  ];
   return (
     <div>
-      <Button dropdownConent = {dropdownData} buttonLabel = 'refine by'/>
+      <Fliterdata label = "Filters" options={[
+        {name: "date of reg"},
+        {name: "vender score"}
+      ]} />
     </div>
   )
 }
-
 export default App
